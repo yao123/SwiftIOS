@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (4.6.0)
+  - Chrysan (1.1.3)
+  - GTMRefresh (1.1.3)
+  - IQKeyboardManagerSwift (5.0.7)
+  - SnapKit (4.0.0)
+  - SwiftFCXRefresh (0.1.1)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.6.0)
+  - Chrysan
+  - GTMRefresh
+  - IQKeyboardManagerSwift (~> 5.0.7)
+  - SnapKit (~> 4.0.0)
+  - SwiftFCXRefresh
+  - SwiftyJSON (~> 4.0.0)
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Chrysan: ef0df537a81be7bb549c0965eee27b53a0629558
+  GTMRefresh: bf4146ddd1e52a5fa2d2cdd5c7b10e27d6233f12
+  IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftFCXRefresh: 74cad61a77485cb510a23b485913039f347e67ce
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: 56d098f3f0279ead61681fdc03952e547c3a5846
+
+COCOAPODS: 1.4.0.rc.1
