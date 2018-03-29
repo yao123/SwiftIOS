@@ -192,7 +192,7 @@ class YBusinessSetUpView: UIView {
         
         endlineView.snp.makeConstraints { (make) in
             make.left.right.equalTo(dateView)
-            make.top.equalTo(dateView.snp.bottom).offset(-2)
+            make.top.equalTo(dateView.snp.bottom).offset(-1)
             make.height.equalTo(1)
         }
     }
@@ -212,20 +212,20 @@ class YBusinessSetUpView: UIView {
              sender.isSelected = true
           
         }
-     
-        if nameStr == "预设暂停营业" {
-            
+        
             guard self.delegate != nil else {
                 return
                 
             }
             self.delegate!.switchBtnClicked(index: sender.tag, select: sender.isSelected)
+         if nameStr == "预设暂停营业" {
+          
             if sender.isSelected {
                 addDateView()
             }else{
-               removeDateView()
+                removeDateView()
             }
-        }
+        }        
        
     }
     required init?(coder aDecoder: NSCoder) {

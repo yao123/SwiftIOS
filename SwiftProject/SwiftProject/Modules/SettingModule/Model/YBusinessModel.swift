@@ -21,13 +21,20 @@ class YBusinessModel: NSObject {
     var suspendStart:String?
     ///预约暂停营业结束时间
     var suspendEnd:String?
+    ///原价
+    var money:String?
+    ///促销价
+    var reduceMoney:String?
     
+    var acitivityArray:Array<YBusinessModel>? = Array()
+    
+    /*
     static let shareModel = YBusinessModel.init()
     
     private override init() {
         
     }
-    
+    */
     static func getBusinessData(dicData:Dictionary<String,Any>) -> YBusinessModel {
         let model = YBusinessModel()
         let dic = JSON(dicData)
@@ -37,7 +44,21 @@ class YBusinessModel: NSObject {
          model.isAcitivity = dic["isAcitivity"].boolValue
          model.suspendStart = dic["suspendStart"].stringValue
          model.suspendEnd = dic["suspendEnd"].stringValue
+        model.getActivityModelArray(dataArray: dicData["activities"] as! Array)
         
         return model
     }
+    
+    func getActivityModelArray(dataArray:Array<Any>) {
+       
+        for dic in dataArray {
+            let model = YBusinessModel()
+            let dicData = JSON(dic)
+             model.money = dicData["money"].stringValue
+             model.reduceMoney = dicData["reduceMoney"].stringValue
+            acitivityArray?.append(model)
+        }
+        
+    }
+    
 }
