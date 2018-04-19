@@ -37,3 +37,4 @@ func getSystemFont(size:Float) -> UIFont{
     
     return UIFont.systemFont(ofSize: CGFloat(size))
 }
+

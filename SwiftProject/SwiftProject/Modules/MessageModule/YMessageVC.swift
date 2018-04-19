@@ -12,13 +12,25 @@ class YMessageVC: YBaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+       
+        YBaseModel.shareModel.sss(m: .reduce)
+        YBaseModel.shareBaseModel.storageUserDefaults(key: "userName", value: "yao")
+        print(YBaseModel.shareBaseModel.takeOutStorageUserDefaults(key: "userName"))
+        YBaseModel.shareBaseModel.delegateStorageUserDefaults(key: "userName")
+    
     }
 
+  
     //MARK:-
     //MARK:1.View生命周期
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if YBaseModel.shareBaseModel.isJudgeEmptyStorageUserDegaults(key: "userName") {
+            print("删除了")
+        }
+     
+    }
     //MARK:-
     //MARK:2.代理
     //MARK: 系统代理

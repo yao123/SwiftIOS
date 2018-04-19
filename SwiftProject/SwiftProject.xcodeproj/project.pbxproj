@@ -11,11 +11,14 @@
 		1D203AEA2065024D000A8EA3 /* YTestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D203AE92065024D000A8EA3 /* YTestCell.swift */; };
 		1D39556C20591301007DC8B7 /* StringMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D39556B20591301007DC8B7 /* StringMacro.swift */; };
 		1D39557220591830007DC8B7 /* YOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D39557120591830007DC8B7 /* YOrderCell.swift */; };
+		1D3ABDD0206E083C00FDC06C /* YBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3ABDCF206E083C00FDC06C /* YBaseModel.swift */; };
+		1D3ABDD3206E183E00FDC06C /* YBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3ABDD2206E183E00FDC06C /* YBaseView.swift */; };
 		1D5BCA1E2069DB7A00C22247 /* YSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5BCA1D2069DB7A00C22247 /* YSettingModel.swift */; };
 		1D5BCA24206A23A100C22247 /* YBusinessSetUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5BCA23206A23A100C22247 /* YBusinessSetUpVC.swift */; };
 		1D5BCA26206A305B00C22247 /* YBusinessSetUpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5BCA25206A305B00C22247 /* YBusinessSetUpCell.swift */; };
 		1D5BCA28206A337300C22247 /* YBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5BCA27206A337300C22247 /* YBusinessModel.swift */; };
 		1D5BCA2A206A3ECF00C22247 /* YBusinessSetUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5BCA29206A3ECF00C22247 /* YBusinessSetUpView.swift */; };
+		1DA73BF42071DBBD000A759E /* YMessageRemaindVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA73BF32071DBBD000A759E /* YMessageRemaindVC.swift */; };
 		1DC5DBD62068FE83000F0881 /* YSsttingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC5DBD52068FE83000F0881 /* YSsttingView.swift */; };
 		1DC5DBD92068FFF7000F0881 /* YSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC5DBD82068FFF7000F0881 /* YSettingCell.swift */; };
 		1DD0643F205A553D00DA6868 /* YProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD0643E205A553D00DA6868 /* YProductCell.swift */; };
@@ -63,11 +66,14 @@
 		1D203AE92065024D000A8EA3 /* YTestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTestCell.swift; sourceTree = "<group>"; };
 		1D39556B20591301007DC8B7 /* StringMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMacro.swift; sourceTree = "<group>"; };
 		1D39557120591830007DC8B7 /* YOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOrderCell.swift; sourceTree = "<group>"; };
+		1D3ABDCF206E083C00FDC06C /* YBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YBaseModel.swift; sourceTree = "<group>"; };
+		1D3ABDD2206E183E00FDC06C /* YBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YBaseView.swift; sourceTree = "<group>"; };
 		1D5BCA1D2069DB7A00C22247 /* YSettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSettingModel.swift; sourceTree = "<group>"; };
 		1D5BCA23206A23A100C22247 /* YBusinessSetUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YBusinessSetUpVC.swift; sourceTree = "<group>"; };
 		1D5BCA25206A305B00C22247 /* YBusinessSetUpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YBusinessSetUpCell.swift; sourceTree = "<group>"; };
 		1D5BCA27206A337300C22247 /* YBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YBusinessModel.swift; sourceTree = "<group>"; };
 		1D5BCA29206A3ECF00C22247 /* YBusinessSetUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YBusinessSetUpView.swift; sourceTree = "<group>"; };
+		1DA73BF32071DBBD000A759E /* YMessageRemaindVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMessageRemaindVC.swift; sourceTree = "<group>"; };
 		1DC5DBD52068FE83000F0881 /* YSsttingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSsttingView.swift; sourceTree = "<group>"; };
 		1DC5DBD82068FFF7000F0881 /* YSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSettingCell.swift; sourceTree = "<group>"; };
 		1DD0643E205A553D00DA6868 /* YProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YProductCell.swift; sourceTree = "<group>"; };
@@ -146,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				1D5BCA23206A23A100C22247 /* YBusinessSetUpVC.swift */,
+				1DA73BF32071DBBD000A759E /* YMessageRemaindVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -296,6 +303,7 @@
 		1DDD86B52057A588006B223E /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
+				1D3ABDD2206E183E00FDC06C /* YBaseView.swift */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -368,6 +376,7 @@
 		1DDD86CE2057AB25006B223E /* BaseRequestModel */ = {
 			isa = PBXGroup;
 			children = (
+				1D3ABDCF206E083C00FDC06C /* YBaseModel.swift */,
 			);
 			path = BaseRequestModel;
 			sourceTree = "<group>";
@@ -602,14 +611,17 @@
 				1D39557220591830007DC8B7 /* YOrderCell.swift in Sources */,
 				1D5BCA24206A23A100C22247 /* YBusinessSetUpVC.swift in Sources */,
 				1D39556C20591301007DC8B7 /* StringMacro.swift in Sources */,
+				1D3ABDD3206E183E00FDC06C /* YBaseView.swift in Sources */,
 				1D5BCA26206A305B00C22247 /* YBusinessSetUpCell.swift in Sources */,
 				1DD0643F205A553D00DA6868 /* YProductCell.swift in Sources */,
 				1DDD8687205775CF006B223E /* ViewController.swift in Sources */,
+				1DA73BF42071DBBD000A759E /* YMessageRemaindVC.swift in Sources */,
 				1D203ADF2064AA32000A8EA3 /* YTestVC .swift in Sources */,
 				1DD06442205A5FA200DA6868 /* YProductModel.swift in Sources */,
 				1D5BCA1E2069DB7A00C22247 /* YSettingModel.swift in Sources */,
 				1DDD86D32057DDD2006B223E /* UIColorMacro.swift in Sources */,
 				1DDD86C62057A778006B223E /* YProductVC.swift in Sources */,
+				1D3ABDD0206E083C00FDC06C /* YBaseModel.swift in Sources */,
 				1DDD8685205775CF006B223E /* AppDelegate.swift in Sources */,
 				1D5BCA2A206A3ECF00C22247 /* YBusinessSetUpView.swift in Sources */,
 				1DDD86BE2057A64E006B223E /* YBaseVC.swift in Sources */,

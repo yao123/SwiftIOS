@@ -50,7 +50,11 @@ class YSsttingView: UIView,UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        controVC?.navigationController?.pushViewController(YBusinessSetUpVC(), animated: true)
+        if indexPath.row == 1 {
+          controVC?.navigationController?.pushViewController(YBusinessSetUpVC(), animated: true)
+        }else{
+           controVC?.navigationController?.pushViewController(YMessageRemaindVC(), animated: true)
+        }
     }
     required init?(coder aDecoder: NSCoder) {
           super.init(coder: aDecoder)

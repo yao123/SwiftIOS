@@ -73,6 +73,7 @@ class YBusinessSetUpVC: YBaseVC,UITableViewDelegate,UITableViewDataSource,YBusin
             mainScro.addSubview(view)
             if i == 2 {
                 if (dataModel?.isAcitivity)! {
+                  
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: { [weak self] in
                         guard let weakSelf = self else{
                             return
@@ -178,7 +179,8 @@ class YBusinessSetUpVC: YBaseVC,UITableViewDelegate,UITableViewDataSource,YBusin
     
     func reduceBtnAction(index: Int) {
         print("reduce\(index)")
-        dataModel?.acitivityArray?.removeLast()
+        dataModel?.acitivityArray?.remove(at: index)
+//        dataModel?.acitivityArray?.removeLast()
         self.tableView?.reloadData()
     }
     //MARK:-
@@ -187,7 +189,7 @@ class YBusinessSetUpVC: YBaseVC,UITableViewDelegate,UITableViewDataSource,YBusin
     //MARK:-
     //MARK:4.数据处理
     func getFetchData(){
-        let dic:[String:Any] = ["isAcitivity":"1","isSuspended":"1","isNormal":"1","suspendStart":"2017-03-26 09:00:00","suspendEnd":"2018-05-31 20:00:00","activities":[["money":"100","reduceMoney":"10"],["money":"300","reduceMoney":"10"]]]
+        let dic:[String:Any] = ["isAcitivity":"1","isSuspended":"1","isNormal":"1","suspendStart":"2017-03-26 09:00:00","suspendEnd":"2018-05-31 20:00:00","activities":[["money":"100","reduceMoney":"10"],["money":"300","reduceMoney":"20"]]]
         
         let model = YBusinessModel.getBusinessData(dicData: dic)
         self.dataModel = model

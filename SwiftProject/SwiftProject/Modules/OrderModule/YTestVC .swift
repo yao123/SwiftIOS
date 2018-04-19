@@ -55,10 +55,10 @@ class YTestVC: YBaseVC ,UIScrollViewDelegate,UICollectionViewDelegate,UICollecti
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        creatDataPickerPiew()
+//        creatDataPickerPiew()
 //        creatMainsScro()
 //        creatBtn()
-//        creatCollectionView()
+        creatCollectionView()
         // Do any additional setup after loading the view.
         
 /* 日期字符串修改时间格式
